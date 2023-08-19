@@ -27,6 +27,7 @@ console.log(hdfc.balance);
 const depobtn = document.getElementById("deposit");
 const amountin = document.getElementById("amount");
 const withbtn = document.getElementById("withdraw");
+const clearbtn = document.getElementById("clear");
 const balanceDiv = document.getElementById("balance");
 
 depobtn.onclick = () => {
@@ -38,4 +39,10 @@ withbtn.onclick = () => {
   const amnt = Number(amountin.value);
   hdfc.withdraw(amnt);
   balanceDiv.innerText = `Balance:${hdfc.balance}`;
+};
+clearbtn.onclick = ()=>{
+  const amnt = Number(amountin.value=0);
+  
+  balanceDiv.innerText = `Balance:${hdfc.balance=0}`;
+  
 };
